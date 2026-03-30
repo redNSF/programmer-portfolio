@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Riyad Shuvro — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div class="grid-lines"></div>
+
+<!-- Nav -->
+<nav id="nav">
+  <div class="nav-logo">// riyad.shuvro</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-number">01</div>
+  <p class="hero-year">// est. 2018 · available for hire</p>
+  <h1 class="hero-name">Riyad<br><span>Shuvro.</span></h1>
+  <div class="hero-role">
+    <div class="hero-role-line"></div>
+    <p class="hero-role-text"><span id="typewriter">Full-Stack Developer</span><span class="cursor-blink"></span></p>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- About -->
+<section id="about">
+  <div class="about-left reveal">
+    <p class="section-label">// 01 — about</p>
+    <h2>Building things<br>that <em>matter.</em></h2>
+  </div>
+  <div class="about-right reveal">
+    <p class="about-bio">
+      I'm a full-stack developer with 6 years of experience crafting performant, 
+      scalable web applications. I obsess over the intersection of clean architecture 
+      and delightful user experience — writing code that's as readable as it is reliable.
+    </p>
+    <p class="about-bio">
+      Currently based in San Francisco, open to remote opportunities. I believe the best 
+      software is invisible — it just works, every time.
+    </p>
+    <div class="about-stats">
+      <div>
+        <span class="stat-num">6+</span>
+        <span class="stat-label">Years exp.</span>
+      </div>
+      <div>
+        <span class="stat-num">40+</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div>
+        <span class="stat-num">12</span>
+        <span class="stat-label">Open source</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="skills-header reveal">
+    <div>
+      <p class="section-label">// 02 — expertise</p>
+      <h2 class="skills-title">What I<br>work with</h2>
+    </div>
+  </div>
+  <div class="skills-grid reveal">
+    <div class="skill-card">
+      <p class="skill-icon">// frontend</p>
+      <h3 class="skill-name">React & Next.js</h3>
+      <p class="skill-desc">TypeScript, Zustand, React Query, Framer Motion. SSR, ISR, Edge.</p>
+    </div>
+    <div class="skill-card">
+      <p class="skill-icon">// backend</p>
+      <h3 class="skill-name">Node & Go</h3>
+      <p class="skill-desc">Express, Fastify, REST, GraphQL, gRPC. Microservices architecture.</p>
+    </div>
+    <div class="skill-card">
+      <p class="skill-icon">// data</p>
+      <h3 class="skill-name">PostgreSQL & Redis</h3>
+      <p class="skill-desc">Schema design, query optimization, caching layers, Prisma ORM.</p>
+    </div>
+    <div class="skill-card">
+      <p class="skill-icon">// devops</p>
+      <h3 class="skill-name">AWS & Docker</h3>
+      <p class="skill-desc">CI/CD pipelines, Terraform, Kubernetes, monitoring with Datadog.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="projects-header reveal">
+    <div>
+      <p class="section-label">// 03 — work</p>
+      <h2 class="projects-title">Selected<br>projects</h2>
+    </div>
+    <span class="projects-count">04 / 04</span>
+  </div>
+
+  <div class="projects-grid">
+    <!-- Featured -->
+    <div class="project-card featured reveal">
+      <div>
+        <p class="project-num">// 001 — featured</p>
+        <h3 class="project-name">Cascade<br>Analytics</h3>
+        <p class="project-desc">
+          A real-time data pipeline and visualization platform processing 
+          2M+ events/day. Built a custom query engine that reduced dashboard 
+          load times from 8s to 340ms.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Next.js</span>
+          <span class="tag">Go</span>
+          <span class="tag">ClickHouse</span>
+          <span class="tag">Kafka</span>
+          <span class="tag">WebSockets</span>
+        </div>
+        <a href="#" class="project-link">View project</a>
+      </div>
+      <div class="project-visual">
+        <div class="project-visual-inner" id="code-preview">
+          <span>const pipeline = createPipeline({</span><br>
+          <span>&nbsp;&nbsp;source: 'kafka://events',</span><br>
+          <span>&nbsp;&nbsp;transform: normalize,</span><br>
+          <span>&nbsp;&nbsp;sink: 'clickhouse',</span><br>
+          <span>&nbsp;&nbsp;throughput: '2M/day'</span><br>
+          <span>});</span><br><br>
+          <span>await pipeline.start();</span><br>
+          <span>// ✓ Processing 2,341 eps</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects 2–4 -->
+    <div class="project-card reveal">
+      <p class="project-num">// 002</p>
+      <h3 class="project-name">Forge CLI</h3>
+      <p class="project-desc">
+        Open-source scaffolding tool with 4,200+ GitHub stars. Generates 
+        production-ready project structures in under 10 seconds.
+      </p>
+      <div class="project-tags">
+        <span class="tag">TypeScript</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">CLI</span>
+      </div>
+      <a href="#" class="project-link">View project</a>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-num">// 003</p>
+      <h3 class="project-name">Orbit Design<br>System</h3>
+      <p class="project-desc">
+        Component library with 80+ accessible components, dark mode support, 
+        and full Figma token sync. Used by 3 product teams.
+      </p>
+      <div class="project-tags">
+        <span class="tag">React</span>
+        <span class="tag">Storybook</span>
+        <span class="tag">Radix UI</span>
+      </div>
+      <a href="#" class="project-link">View project</a>
+    </div>
+
+    <div class="project-card reveal">
+      <p class="project-num">// 004</p>
+      <h3 class="project-name">Pulse<br>Monitoring</h3>
+      <p class="project-desc">
+        Lightweight uptime monitor with anomaly detection. Sends alerts 
+        via Slack, PagerDuty, and webhooks. Self-hostable in one command.
+      </p>
+      <div class="project-tags">
+        <span class="tag">Go</span>
+        <span class="tag">SQLite</span>
+        <span class="tag">Docker</span>
+      </div>
+      <a href="#" class="project-link">View project</a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <p class="contact-eyebrow reveal">// 04 — contact</p>
+  <h2 class="contact-headline reveal">Let's build<br>something <span>great.</span></h2>
+  <a href="mailto:riyad@shuvro.dev" class="contact-email reveal">riyad@shuvro.dev</a>
+  <ul class="social-links reveal">
+    <li><a href="#">GitHub</a></li>
+    <li><a href="#">LinkedIn</a></li>
+    <li><a href="#">Twitter/X</a></li>
+    <li><a href="#">Read.cv</a></li>
+  </ul>
+</section>
+
+<!-- Footer -->
+<footer>
+  <span class="footer-copy">© 2024 Riyad Shuvro. All rights reserved.</span>
+  <span class="footer-built">Designed &amp; built from scratch.</span>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
