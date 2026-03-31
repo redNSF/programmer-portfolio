@@ -2,7 +2,7 @@
 
 A premium, developer-focused portfolio template built with **Vanilla HTML, CSS, and JavaScript**. Designed for impact with a brutalist-minimalist aesthetic, featuring smooth animations, a custom interaction system, and a mobile-first responsive layout.
 
-![Portfolio Preview](https://github.com/redNSF/programmer-portfolio/assets/preview.png)
+![Portfolio Preview](assets/preview.png)
 
 ## 🌟 Features
 
